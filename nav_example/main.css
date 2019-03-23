@@ -61,4 +61,10 @@ body{
 		color: #50667E;
 		background-color: #f5f5f0;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
