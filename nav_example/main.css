@@ -35,19 +35,34 @@ nav a:hover{
 img{
 	/*width:100%;*/
 	float: left;
-	margin: 30px 20px 0px 10px;
+	margin: 30px 20px 0px 20px;
 	padding-right: 10px;
 }
 h1{text-align: center;
 	margin-bottom: 50px;
+	margin-top: 20px;
+font-family: 'Domine', serif;
 
 }
 h2{
 	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #204060;
+	font-family: 'Open Sans', sans-serif;
 }
 h3{
 	font-size: 20px;
+		color: #204060;
+}
+h4{
+	font-family: 'Amatic SC', cursive;
 }
 p{
 	font-size: 20px;
+	margin-bottom: 10px;
+}
+body{
+		color: #50667E;
+		background-color: #f5f5f0;
 }
