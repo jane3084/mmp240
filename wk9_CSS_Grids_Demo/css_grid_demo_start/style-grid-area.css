@@ -34,9 +34,8 @@ grid-area: footer;
 		grid-template-columns: 2fr 1fr 1fr;
 		grid-template-areas: 
 	"title title title"
-    "masthead masthead masthead"
-    "main main main"
-    "sidebar sidebar sidebar"
+    "main masthead masthead"
+    "main sidebar sidebar"
     "footer footer footer";
 	}
 }
