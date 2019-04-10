@@ -11,3 +11,15 @@ height: auto;
 	padding: .7em lem;
 	background: hsl(0,0%,85%);
 }
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
