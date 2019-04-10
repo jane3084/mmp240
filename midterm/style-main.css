@@ -1,3 +1,30 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+	margin-top: 20px;
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 600px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+  }
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -32,6 +59,13 @@ nav a:hover{
 	background-color: #D5DFCF;
 	color:black;
 }
+ul{
+	text-align: center;
+	margin-left: 10spx;
+}
+li{
+	margin-left: 18px;
+}
 
 
 h1{text-align: center;
@@ -61,4 +95,3 @@ body{
 		color: #50667E;
 		background-color: #f5f5f0;
 }
-

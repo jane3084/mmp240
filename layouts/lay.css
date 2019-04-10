@@ -1,0 +1,39 @@
+article, section, aside, hgroup, nav, header, footer, figure, figcaption {
+    display: block;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    margin-left: 0px;
+    margin-top: 0px;
+}
+img {
+    border: none;
+}
+#wrapper {
+    width: 990px;
+    margin-right: auto;
+    margin-left: auto;
+}
+header {
+    height: 130px;
+}
+aside {
+    width: 245px;
+    float: left;
+}
+#content {
+    width: 500px;
+    float: left;
+}
+#rightsidebar {
+    width: 245px;
+    float: left;
+}
+footer {
+    height: 50px;
+    clear: both;
+}
