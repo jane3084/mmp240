@@ -1,42 +1,25 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
     <title>Home</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i|Source+Sans+Pro:400,400i,600,600i" rel="stylesheet">
+   <!--    <meta charset="UTF-8"> -->
+  <!--   <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Crimson+Text|Merienda|Quattrocento+Sans" rel="stylesheet">
     <link rel="stylesheet" href="style-main.css" type="text/css" media="all">
   <link rel="stylesheet" href="area.css" type="text/css" media="all">
   <link rel="stylesheet" href="image.css" type="text/css" media="all">
+        <link rel="stylesheet" type="text/css" href="mobile.css">
+
     <!-- <link rel="stylesheet" href="grid.css" type="text/css" media="all"> -->
 
 </head>
 <body>
-<nav>
-        <ul>
-          <li><a href="../index.html">Jie'site</a></li>
-          <li><a href="midterm/index.html">Home</a></li>
-          <li><a href="services.html"> Services </a></li>
-
-          <li><a href="pricelist.html"> Price List</a></li>
-
-
-        </ul>
-  </nav>
-</body>
-<div class="site">
-
-
-<!--     <a class="skip-link screen-reader-text" href="#content">Skip to content</a> -->
-<!--
-    <header class="masthead">
-        <code class="identifier"><pre>.masthead</pre></code>
-        <h2>Welcome to Vivid Nail</h2>
-    </header><!-- .masthead -->
-<div class="page-title">
     <div class="container">
-        <code class="identifier"><pre>.page-title</pre></code>
+        <!-- <code class="identifier"><pre>.page-title</pre></code> -->
 
 
          <figure class="featured-image">
@@ -50,14 +33,44 @@
     </figure>
 
     </div>
-  </div><!-- .page-title -->
+   
+    <nav class="topnav" id="myTopnav">
+        <ul>
+          <li><a href="../index.html" class="active">Jie'site</a></li>
+          <li><a href="../midterm/index.html" class="active">Home</a></li>
+          <li><a href="services.html" class="active"> Services </a></li>
+
+          <li><a href="Others.html" class="active"> Reservation & offer</a></li>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+
+
+        </ul>
+  </nav>
+
+<div class="site">
+
+
+
+
 
     <main id="content" class="main-content">
         <code class="identifier"><pre></pre></code>
-        <h2>Vivil Nail</h2>
+        <div class="left">
+        <h2>Vivil Nail Salon</h2>
         <p>Address:xx,xx,xx,xxx</p>
         <p>Telephone:xxx-xxx-xxx</p>
         <P>Email:xxxxx@xx.com</P>
+      </div>
+      <div class="right">
+
+         <h2>Business Hour</h2>
+        <p>Monday to Saturday:10am-8pm </p>
+        <p>Sunday Only: 10am-7pm</p>
+      </div>
+
+
 
 
     <figure class="featured-image">
@@ -67,7 +80,7 @@
 
         </figcaption>
     </figure>
-
+    
     </main><!-- #content .main-content -->
 
     <aside class="sidebar">
@@ -77,27 +90,54 @@
       <P>Email:xxxxx@xx.com</P> -->
 
 
-
-        <code class="identifier"><pre>About Vivil Nail Salon</pre></code>
+<!-- 
+        <code class="identifier"><pre>About Vivil Nail Salon</pre></code> -->
+        <h2>About Vivil Nail Salon</h2>
 
 
         <p> •We have been the experts in “mani’s & pedi’s” since 2015. We strive in providing a friendly and welcoming atmosphere with our professional services to promote relaxation in your neighborhood.</p>
 
          <p> •We offer a variation of options for nail care. This includes acrylics, silk or fiberglass wraps, French manicures, polish, pedicures, etc. Some nail salons are offering one-stop beauty services. In addition, we also offer facial treatments, waxing, and skin care.</p>
+         <figure class="featured-image">
+
+        <img src="green-nails.jpg" alt="salon">
+        <figcaption class="image-caption">
+
+        </figcaption>
+    </figure>
+       
 
     </aside><!-- .sidebar -->
 
-    <footer class="footer-content">
 
-        <code class="identifier"><pre>Why choose us?</pre></code>
+    <footer class="footer-content">
+      
+
+       <!--  <code class="identifier"><pre>Why choose us?</pre></code> -->
+       <h2>Why choose us?</h2>
 
         <p><span class="bg">
-Our Nails & Spa focus on health and wellness through the use of environmentally friendly products and services. We believe in the interconnectedness of the body, spirit, and earth.
+•Our Nails & Spa focus on health and wellness through the use of environmentally friendly products and services. We believe in the interconnectedness of the body, spirit, and earth.
 
-For this reason, we always strive to help nurture that connection in a peaceful environment. Tutti is for those of us who wish for peace in the world and opt to start from within.</span></p>
+For this reason, we always strive to help nurture that connection in a peaceful environment. We sincerely hope that every customer can feel calm and relaxed in here. </span></p>
+<p>•The salon offers several different services, such as SNS, gel, and UV Gel manicures. If you desire a longer look to your nails, you can receive full sets using any one of these mediums. Here at Love Polish, you can also glam up your nails by requesting any design of your choice. We also offer pedicures and waxes to achieve an overall presentable, flawless, and healthy look.</p>
+
+<a href="https://lovepolishaz.com/about/">#citation</a>
+
     </footer><!-- .footer-content -->
-
+  
 
 </div>
+<script>            
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+</body>
 
 </html>
