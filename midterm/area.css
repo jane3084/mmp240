@@ -52,6 +52,7 @@ font-size: 20px;
 margin-left: 30px;
 	margin-right: 30px;
 	margin-top: 20px;
+	border-bottom: 40px solid #DDD0C6;
 }
 
 .identifier{
@@ -76,13 +77,13 @@ margin-left: 30px;
 }*/
 @media only screen and (min-width: 1200px){
 	.site{
-		grid-template-columns: 2fr 1fr 1fr 1fr ;
+		grid-template-columns:  1fr 1fr 1fr 1fr ;
 		grid-template-areas:
 
 	/*"title title title title"*/
 
-    "main main main main"
-    "main main main main"
+    "main main main main "
+    
     "sidebar sidebar sidebar sidebar"
     "footer footer footer footer";
 	}
