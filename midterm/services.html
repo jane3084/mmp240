@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="area.css" type="text/css" media="all">
   <link rel="stylesheet" href="image.css" type="text/css" media="all">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="mobile.css">
   </head>
   <body>
      <div class="container">
@@ -24,16 +26,19 @@
 
     </figure>
     </div>
-    <nav>
-        <ul>
-          <li><a href="../index.html">Jie'site</a></li>
-          <li><a href="../midterm/index.html">Home</a></li>
-          <li><a href="services.html"> Services </a></li>
+    <nav class="topnav" id="myTopnav">
+        
+          <a href="../index.html" class="active">Jie'site</a>
+          <a href="../midterm/index.html" class="active">Home</a>
+          <a href="services.html" class="active"> Services </a>
 
-          <li><a href="Others.html"> Reservation & offer</a></li>
+         <a href="others.html" class="active"> Reservation & offer</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
 
 
-        </ul>
+        
   </nav>
 
 
@@ -125,6 +130,16 @@
 
         </figcaption>
     </figure>
+    <script>            
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+</script>
        
  
   </body>

@@ -7,6 +7,8 @@
     <!-- <link rel="stylesheet" href="style-main.css" type="text/css" media="all"> -->
   <link rel="stylesheet" href="others.css" type="text/css" media="all">
   <link rel="stylesheet" href="image.css" type="text/css" media="all">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="mobile.css">
 
   </head>
   <body>
@@ -25,7 +27,7 @@
     </figure>
 
     </div>
-    <nav>
+<!--     <nav>
             <ul>
               <li><a href="../index.html">Jie'site</a></li>
 
@@ -37,7 +39,22 @@
 
 
             </ul>
-      </nav>
+      </nav> -->
+
+      <nav class="topnav" id="myTopnav">
+        
+          <a href="../index.html" class="active">Jie'site</a>
+          <a href="../midterm/index.html" class="active">Home</a>
+          <a href="services.html" class="active"> Services </a>
+
+         <a href="others.html" class="active"> Reservation & offer</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+
+
+        
+  </nav>
        <h1> Promotion & Offer</h1>
 
       <div class="site">
@@ -92,6 +109,16 @@
 </footer>
 
 
+<script>            
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+</script>
 
 
 
