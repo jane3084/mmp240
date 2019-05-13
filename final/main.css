@@ -1,0 +1,29 @@
+nav  {
+	
+	text-align: right;
+	margin: 0;
+	color: white;
+	font-size: 50%;
+
+}
+
+nav ul{
+	list-style: none;
+}
+nav li{
+	display: inline;
+}
+
+
+nav a{
+	display: inline-block;
+	padding: 20px;
+	text-decoration: none;
+	/*color: #50667E;*/
+	color: white;
+}
+
+nav a:hover{
+	background-color: white;
+	color:black;
+}
