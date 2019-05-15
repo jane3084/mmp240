@@ -2,9 +2,9 @@ nav  {
 	
 	text-align: right;
 	margin: 0;
-	color: white;
-	font-size: 50%;
 
+	font-size: 50%;
+	color:black;
 }
 
 nav ul{
@@ -20,10 +20,17 @@ nav a{
 	padding: 20px;
 	text-decoration: none;
 	/*color: #50667E;*/
-	color: white;
+	color: black;
 }
 
 nav a:hover{
-	background-color: white;
+	background-color: black;
 	color:black;
+}
+
+body{
+ 
+  background-color:white;
+  font-size:40px;
+ font-family: 'Poiret One', cursive;
 }

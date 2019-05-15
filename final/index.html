@@ -9,7 +9,12 @@
   <!--   <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Crimson+Text|Merienda|Quattrocento+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="main.css" type="text/css" media="all">
+    <!-- <link rel="stylesheet" href="main.css" type="text/css" media="all"> -->
+    
+ 
+<link href="https://fonts.googleapis.com/css?family=Delius+Swash+Caps|Harmattan" rel="stylesheet">
+
+
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -32,66 +37,196 @@ body{
   background-size: cover;
   color:#261a0d;
   font-size:40px;
- font-family: 'Poiret One', cursive;
+ font-family: 'Lora', serif;
   
     }
 
+.site{
+  display:grid ;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr;
+    grid-template-areas:
+
+"main"
+
+}
+.main-content{
+  grid-area: main;
+  margin-left: 4%;
+  margin-right: 1%;
+}
+
+
+.left{
+  float: left;
+  max-width: 30%;
+  text-align: left;
+
+}
+.right{
+  float:right;
+  max-width: 23%;
+  text-align: left;}
+
+  h1{ 
+    font-family: 'Harmattan', sans-serif;
+
+    color:white;
+    font-size: 25px;
+
+  }
     
 h2{
-	font-family: 'Antic Slab', serif;
-	;
+	 font-family: 'Poiret One', cursive;
+   font-size: 20px;
+   color:white;
+	
 }
 
 nav{
 	margin-bottom: 20%;
 }
 
-/*.center{
 
-	margin-left: 33%;
-}*/
-.left{
+
+
+/*.left{
 	margin-left:2%;
 	font-family: 'Shadows Into Light Two', cursive;
+}*/
+
+
+ /*   figure{
+      max-width: 30%;
+     text-align: left;
+    }*/
+
+    nav  {
+  
+  text-align: right;
+  margin: 0;
+  color: white;
+  font-size: 50%;
+
+}
+
+nav ul{
+  list-style: none;
+}
+nav li{
+  display: inline;
 }
 
 
-    figure{
-      max-width: 30%;
-     text-align: left;
-    }
+nav a{
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+  /*color: #50667E;*/
+  color: white;
+}
+
+nav a:hover{
+  background-color: white;
+  color:black;
+}
+
+body{
+background-size: cover;
+  color:#261a0d;
+  font-size:40px;
+ font-family: 'Harmattan', sans-serif;}
+
+@media only screen and (max-width: 700px){
+  body{
+    background-size: cover;
+  color:#261a0d;
+  font-size:25px;
+ font-family: 'Harmattan', sans-serif;
+
+  }
+  h1{
+    font-size: 20px;
+    font-family: 'Harmattan', sans-serif;
+  }
+  h2{
+    font-size: 15px;
+    font-family: 'Poiret One', cursive;
+  }
+
+}
+
     </style>
 </head>
 <body>
 	    <nav class="topnav" id="myTopnav">
-        
-          <a href="../index.html" class="active">Jie'site</a>
-          <a href="../final/index.html" class="active">HomePage</a>
-          <a href="menu.html" class="active"> Menu </a>
-          <a href="imagegallery.html" class="active"> Image Gallery </a>
 
-         <a href="otherservices.html" class="active"> Others & Reservation</a>
+        
+          <a href="../index.html">Jie'site</a>
+          <a href="../final/index.html">TeaHouse</a>
+          <a href="menu.html"> Menu </a>
+          <a href="imagegallery.html"> Image Gallery </a>
+
+         <a href="otherservices.html"> Others &amp; Reservation</a>
+          
+
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
 
+      </nav>
 
 
-  </nav>
-
-  <figure>
 	
-<div class="left">
+<!-- <div class="left">
   <p>Why won't you stop for a while to enjoy the peace of your life in here?</p>
-  <figcaption>-TeaHouse</figcaption>
+ -->
+  <div class="site">
+
+
+
+
+
+    <main id="content" class="main-content">
+        <code class="identifier"><pre></pre></code>
+        <div class="left">
+        
+        <p>Why won't you stop for a while to enjoy the peace of your life in here?</p>
+      
+      <figcaption>-TeaHouse</figcaption>
+      </div>
+
+     
+     
+      <div class="right">
+
+         <h1>Business Hour</h1>
+        <h2>11am-10pm </h2>
+        <h1>Our Location</h1>
+        <h2>xxx New York 10000</h2>
+        <h2>Lower eastside of Manhattan</h2>
+      </div>
+   
+  
+     
+  
 </div>
-		
-		
-		
 
+		
 	
-	
-</figure>
 
+
+
+
+<script>            
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+</script>
 </body>
 </html>
