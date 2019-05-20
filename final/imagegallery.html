@@ -76,10 +76,16 @@ body{
 	font-size: auto;
   transform: translate(-50%, -50%);
 }
-.featured-image img{
+
+.featured-images img{
 display: block;
 width: 100%;
 height: auto;
+}
+.featured-image img{
+  width: 100%;
+  height: auto;
+  float: center;
 }
 .main-content{
 	margin-left: 15%;
@@ -108,6 +114,132 @@ nav{
 	border-top: solid #e0e0d1;
 	
 }
+
+@media only screen and (min-width:300px)
+{
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 35px;
+    transform: translate(-50%, -50%);}
+
+  .featured-image img{
+  width: 60%;
+  height: auto;
+ 
+
+}
+@media only screen and (min-width:500px)
+{
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    transform: translate(-50%, -50%);}
+
+  .featured-image img{
+  width: 80%;
+  height: auto;
+ 
+
+}
+@media only screen and (min-width:700px)
+{
+  .main-content{
+   margin-left: 17%;
+   margin-right: 17%;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    transform: translate(-50%, -50%);}
+
+  .featured-image img{
+  width: 100%;
+  height: auto%;
+}
+@media only screen and (min-width:800px)
+{
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    transform: translate(-50%, -50%);}
+
+  .featured-image img{
+  width: 100%;
+  height: auto%;
+}
+@media only screen and (min-width:900px)
+{
+  .main-content{
+   margin-left: 20%;
+   margin-right: 20%;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 60px;
+    transform: translate(-50%, -50%);}
+
+  .featured-image img{
+  width: 100%;
+  margin-left: 10%;
+  height: auto;}
+ 
+}
+@media only screen and (min-width:950px)
+{
+  .main-content{
+   margin-left: 20%;
+   margin-right: 20%;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 60px;
+    transform: translate(-50%, -50%);}
+
+  .featured-image img{
+  width: 100%;
+  margin-left: 10%;
+  height: auto;}
+  section{height: 30%;
+
+ }
+ 
+}
+@media only screen and (min-width:1200px)
+{
+  .main-content{
+   margin-left: 25%;
+   margin-right: 25%;
+  }
+  .featured-image img{
+  width: 100%;
+  margin-left: 33%;
+  height: auto;}
+}
+@media only screen and (min-width:1500px)
+{
+  .main-content{
+   margin-left: 25%;
+   margin-right: 25%;
+  }
+  .featured-image img{
+  width: 100%;
+  margin-left: 39%;
+  height: auto;}
+}
+
+
 </style>
 
 <body class="site">
@@ -116,7 +248,7 @@ nav{
         <!-- <code class="identifier"><pre>.page-title</pre></code> -->
 
 
-         <figure class="featured-image">
+         <figure class="featured-images">
 
         <img src="tea/1.jpg" alt="tea">
   
@@ -152,7 +284,7 @@ nav{
         <p>When the tea culture became more and more popular in New York, as a tea enthusiast, Tai Wu decided to open a tea shop to share his love for tea. Teahouse was founded in East Village, New York 2017. It not only serves a wide variety of teas, but also it  offers a variety of exquisite hand-made drinks.</p>
 
     <figure class="featured-image">
-        <img src="tea/puretea.jpg" alt="tea">
+        <img src="tea/puretea.jpg" alt="tea" >
     </figure>
 </main>
 <main id="content" class="main-content">
